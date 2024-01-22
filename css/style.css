@@ -1,0 +1,225 @@
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/poppins-v20-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/poppins-v20-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/roboto-v30-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* roboto-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/roboto-v30-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 375px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card__title {
+  display: flex;
+  gap: 69px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+.card__description {
+  color: #414d55;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px; /* 125% */
+  letter-spacing: 0.01px;
+}
+.card__text {
+  border-radius: 10px;
+  background: #fdca40;
+  width: 22px;
+  height: 20px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card__item {
+  display: flex;
+  gap: 9px;
+  padding-bottom: 10px;
+}
+.card__item-text {
+  color: #90a1ac;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 166.667% */
+}
+.card__item-text-2 {
+  color: #90a1ac;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 166.667% */
+}
+.card__section {
+  color: #727677;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 125% */
+  padding-bottom: 25px;
+}
+.card__img {
+  border-style: dashed;
+  border-top: #696d6e;
+  border-right: #696d6e;
+  border-left: #696d6e;
+  position: relative;
+  border-color: #696d6e;
+  width: 17px;
+}
+
+.card__img-text-1 {
+  color: #696d6e;
+  font-family: Roboto;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 200% */
+  letter-spacing: 0.417px;
+  text-transform: uppercase;
+  position: absolute;
+  margin-left: 18px;
+  margin-top: -10px;
+}
+
+.card__img-5 {
+  border-style: dashed;
+  border-top: #696d6e;
+  border-right: #696d6e;
+  border-left: #696d6e;
+  position: absolute;
+  border-color: #696d6e;
+  width: 158px;
+  margin-left: 54px;
+  margin-bottom: 10px;
+}
+
+.card__main {
+  margin-top: 10px;
+  display: flex;
+  gap: 9px;
+  margin-bottom: 10px;
+}
+.card__main-p {
+  color: #90a1ac;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 166.667% */
+}
+.card__main-p-2 {
+  color: #90a1ac;
+  font-family: Roboto;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 166.667% */
+}
+.card__footer {
+  color: #727677;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px; /* 125% */
+  width: 191px;
+  margin-bottom: 30px;
+}
+.card__end {
+  width: 109px;
+  height: 32px;
+  flex-shrink: 0;
+  background-color: #28b5e0;
+  border-radius: 8px;
+  padding-top: 5px;
+}
+.card__end-t {
+  color: #fff;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 142.857% */
+}
+.card__end-1 {
+  width: 90px;
+  height: 32px;
+  flex-shrink: 0;
+  background-color: #e9f7fb;
+  border-radius: 8px;
+  padding-top: 5px;
+}
+.card__end-t-1 {
+  color: #27b4e0;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px; /* 142.857% */
+}
+
+.card__full {
+  display: flex;
+  gap: 16px;
+}
